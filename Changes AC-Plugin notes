@@ -1,0 +1,13 @@
+Added multidesk to dualapp module
+app/gradle
+ - added multidesk implementation
+ - enabled multidesk (android{default{enable multidesk}}) 
+
+ 
+ added testfolder sources to app/gradle
+ - add the below to android object
+ sourceSets{
+        main { java.srcDirs = ['src/main/java'] }
+        test { java.srcDirs = ['src/test/java'] }
+        androidTest { java.srcDirs = ['src/androidTest/java'] }
+    }
